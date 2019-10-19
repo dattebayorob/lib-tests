@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+body > #root > .row{
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    background: cadetblue;
+    text-align: center;
+    font-size: 16px;
+}
