@@ -1,6 +1,6 @@
 import React from 'react'
-import { Row, Col } from './components'
-import './assets/css/base.css'
+import 'lib/dist/assets/css/base.css'
+import { Col, Row } from 'lib'
 const App: React.FC = () => {
     return (
         <Row>
