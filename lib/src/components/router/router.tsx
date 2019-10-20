@@ -1,16 +1,16 @@
 import React from 'react';
-import { withRouter, RouteComponentProps } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
-interface Props extends RouteComponentProps{
+interface Props{
     test?: string
 }
 
 const Router: React.FC<Props> = (props)=>{
-    const { pathname } = props.location
+    const { pathname } = useLocation()
     console.log(props.test)
     return <div>
         Router test { pathname }
     </div>
 }
 
-export default withRouter(Router)
+export default Router
